@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--
+  In this file:
+  - You CAN edit the <body> structure and contents.
+  - You CAN change the current tags and their order inside the <body>.
+  - You CAN add new tags, ids and classes or wrap the existing ones inside the <body>.
+  BUT:
+  - You CANNOT edit the <head>.
+  - You CANNOT add additional external references (libraries, frameworks, etc.), this is going to be automatically tested.
+  - You CANNOT add javascript code or additional stylesheets. The test only copies your index.html and style.css files.
+  - You CANNOT remove template tags (variables between {}). The test may change the content of these.
+-->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <title>Magnet Frontend Test</title>
+        <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;800&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="style.css"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <script
+            type=""
+            src="site.js"
+        ></script>
+        <nav class="container__nav">
+            <img
+                class="img__nav"
+                src="img/logo.png"
+                alt="dog head logo"
+            />
+            <div class="name_dogos">Dogos</div> 
+            {navlinks}
+        </nav>
+        <h1>{title}</h1>
+        <section>
+            <article class="container__card">
+                {content1}
+               <button class="btn__card"><a href="#"><img class="img__btn-paw" src="img/paw.png" alt="icon paw"/>Learn more</a></button> 
+            </article>
+            <article class="container__card">
+                {content2}
+              <button class="btn__card btn__card-content2"><a href="#"><img class="img__btn-paw" src="img/paw.png" alt="icon paw" />Learn more</a></button>  
+            </article>
+            <article class="container__card">
+                {content3}
+                <button class="btn__card"><a href="#"><img class="img__btn-paw" src="img/paw.png"  alt="icon paw"/>Learn more</a></button>
+            </article>
+        </section>
+    </body>
+</html>
